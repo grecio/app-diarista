@@ -9,25 +9,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Unit Test", "1 - Unit T
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Worker", "2 - Worker", "{97F42A25-6969-450D-A937-999EA5819365}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Core", "3 - Core", "{ED122868-298B-416A-9E25-01D47822B3AA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Core", "4 - Core", "{ED122868-298B-416A-9E25-01D47822B3AA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{802A567A-BFA2-4BFD-8091-009430499C5C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{802A567A-BFA2-4BFD-8091-009430499C5C}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Diarista.Microservices", "Diarista.Microservices\Diarista.Microservices.fsproj", "{AFB7F2D1-F251-4FCC-AE1C-BA0F34340B60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diarista.Infra.Validations", "Diarista.Infra.Validations\Diarista.Infra.Validations.csproj", "{E80CFAF6-23F4-4036-84B2-51F37F66E005}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diarista.Infra.Validations", "Diarista.Infra.Validations\Diarista.Infra.Validations.csproj", "{E80CFAF6-23F4-4036-84B2-51F37F66E005}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diarista.Infra.Data", "Diarista.Infra.Data\Diarista.Infra.Data.csproj", "{BEFFE140-FF81-4A35-BD5E-71144287F631}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diarista.Infra.Data", "Diarista.Infra.Data\Diarista.Infra.Data.csproj", "{BEFFE140-FF81-4A35-BD5E-71144287F631}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diarista.Infra.Configurations", "Diarista.Core.Configurations\Diarista.Infra.Configurations.csproj", "{ED6EBBAE-4079-4A25-B5F7-46EE33F3EF30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diarista.Core.Configurations", "Diarista.Core.Configurations\Diarista.Core.Configurations.csproj", "{ED6EBBAE-4079-4A25-B5F7-46EE33F3EF30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diarista.Infra.Extensions", "Diarista.Coro.Extensions\Diarista.Infra.Extensions.csproj", "{72BCB854-8963-418C-AF8C-D90FB6D81760}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diarista.Coro.Extensions", "Diarista.Coro.Extensions\Diarista.Coro.Extensions.csproj", "{72BCB854-8963-418C-AF8C-D90FB6D81760}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diarista.Core.Models", "Diarista.Core.Models\Diarista.Core.Models.csproj", "{E5CD2E41-373A-4EDB-8CD8-885F099BDB41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diarista.Core.Models", "Diarista.Core.Models\Diarista.Core.Models.csproj", "{E5CD2E41-373A-4EDB-8CD8-885F099BDB41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diarista.Core.Services", "Diarista.Core.Services\Diarista.Core.Services.csproj", "{0E9E89CE-9927-4847-A720-71CA6DA894CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diarista.Core.Services", "Diarista.Core.Services\Diarista.Core.Services.csproj", "{0E9E89CE-9927-4847-A720-71CA6DA894CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diarista.UnitTest", "Diarista.UnitTest\Diarista.UnitTest.csproj", "{9C157BD6-73DA-4324-92AE-28615BE5C037}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diarista.UnitTest", "Diarista.UnitTest\Diarista.UnitTest.csproj", "{9C157BD6-73DA-4324-92AE-28615BE5C037}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diarista.Microservices", "Diarista.Microservices\Diarista.Microservices.csproj", "{3BA125FB-A5DB-48F8-87DD-39A89820BBC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AFB7F2D1-F251-4FCC-AE1C-BA0F34340B60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AFB7F2D1-F251-4FCC-AE1C-BA0F34340B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AFB7F2D1-F251-4FCC-AE1C-BA0F34340B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AFB7F2D1-F251-4FCC-AE1C-BA0F34340B60}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E80CFAF6-23F4-4036-84B2-51F37F66E005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E80CFAF6-23F4-4036-84B2-51F37F66E005}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E80CFAF6-23F4-4036-84B2-51F37F66E005}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -67,20 +63,23 @@ Global
 		{9C157BD6-73DA-4324-92AE-28615BE5C037}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C157BD6-73DA-4324-92AE-28615BE5C037}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C157BD6-73DA-4324-92AE-28615BE5C037}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BA125FB-A5DB-48F8-87DD-39A89820BBC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA125FB-A5DB-48F8-87DD-39A89820BBC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BA125FB-A5DB-48F8-87DD-39A89820BBC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BA125FB-A5DB-48F8-87DD-39A89820BBC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{802A567A-BFA2-4BFD-8091-009430499C5C} = {ED122868-298B-416A-9E25-01D47822B3AA}
-		{AFB7F2D1-F251-4FCC-AE1C-BA0F34340B60} = {97F42A25-6969-450D-A937-999EA5819365}
 		{E80CFAF6-23F4-4036-84B2-51F37F66E005} = {802A567A-BFA2-4BFD-8091-009430499C5C}
 		{BEFFE140-FF81-4A35-BD5E-71144287F631} = {802A567A-BFA2-4BFD-8091-009430499C5C}
-		{ED6EBBAE-4079-4A25-B5F7-46EE33F3EF30} = {ED122868-298B-416A-9E25-01D47822B3AA}
-		{72BCB854-8963-418C-AF8C-D90FB6D81760} = {ED122868-298B-416A-9E25-01D47822B3AA}
+		{ED6EBBAE-4079-4A25-B5F7-46EE33F3EF30} = {802A567A-BFA2-4BFD-8091-009430499C5C}
+		{72BCB854-8963-418C-AF8C-D90FB6D81760} = {802A567A-BFA2-4BFD-8091-009430499C5C}
 		{E5CD2E41-373A-4EDB-8CD8-885F099BDB41} = {ED122868-298B-416A-9E25-01D47822B3AA}
 		{0E9E89CE-9927-4847-A720-71CA6DA894CD} = {ED122868-298B-416A-9E25-01D47822B3AA}
 		{9C157BD6-73DA-4324-92AE-28615BE5C037} = {E87F1567-9C7C-430B-B797-77A8A0AD737A}
+		{3BA125FB-A5DB-48F8-87DD-39A89820BBC0} = {97F42A25-6969-450D-A937-999EA5819365}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF31BA52-5526-442D-B08C-9F27B83643A4}
