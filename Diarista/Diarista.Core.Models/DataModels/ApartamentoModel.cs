@@ -13,5 +13,8 @@ namespace Diarista.Core.Models.DataModels
         public int QtdBanheiros { get; set; }
         public int QtdCozinhas { get; set; }
         public int QtdSalas { get; set; }
+
+        public EnderecoModel Endereco { get; set; }
+
     }
 }

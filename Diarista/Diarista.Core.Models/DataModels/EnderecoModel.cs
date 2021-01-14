@@ -13,5 +13,9 @@ namespace Diarista.Core.Models.DataModels
         public String Numero { get; set; }
         public String Complemento { get; set; }
         public String Bairro { get; set; }
+
+        public int ApartamentoEnderecoId { get; set; }
+        public ApartamentoModel Apartamento { get; set; }
+
     }
 }
