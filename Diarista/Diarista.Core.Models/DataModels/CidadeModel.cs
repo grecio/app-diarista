@@ -8,6 +8,13 @@ namespace Diarista.Core.Models.DataModels
     {
         public Guid Id { get; set; }
         public String Nome {get; set; }
-        EstadoModel Estado { get; set; }
+        public EstadoModel Estado { get; set; }
+
+        public Guid CidadeEstadoId { get; set; }
+
+        public EnderecoModel Endereco { get; set; }
+        public Guid CidadeEnderecoId { get; set; }
+
+
     }
 }

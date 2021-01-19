@@ -24,6 +24,9 @@ namespace Diarista.Infra.Data.Mappings
             builder.Property(p => p.Id);
             builder.Property(p => p.Nome);
             //Falta imlementar o atributo derivado Estado
+            builder.HasOne(p => p.Estado)
+               .WithOne(p => p.Cidade)
+               .HasForeignKey<EstadoModel>(p => p.CidadeEstadoId);
         }
     }
 }

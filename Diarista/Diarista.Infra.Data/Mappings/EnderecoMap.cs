@@ -27,6 +27,16 @@ namespace Diarista.Infra.Data.Mappings
             builder.Property(p => p.Complemento);
             builder.Property(p => p.Bairro);
             //Falta imlementar os atributo derivado Cidade & Estado
+
+            builder.HasOne<CidadeModel>(p => p.Cidade)
+                .WithOne(p => p.Endereco)
+                .HasForeignKey<CidadeModel>(p => p.CidadeEnderecoId);
+
+
+            builder.HasOne<EstadoModel>(p => p.Estado)
+               .WithOne(p => p.Endereco)
+               .HasForeignKey<EstadoModel>(p => p.EstadoEnderecoId);
+
         }
     }
 }

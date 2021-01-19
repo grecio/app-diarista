@@ -27,7 +27,6 @@ namespace Diarista.Infra.Data.Mappings
             builder.Property(p => p.QtdBanheiros);
             builder.Property(p => p.QtdCozinhas);
             builder.Property(p => p.QtdSalas);
-            //Falta imlementar o atributo derivado Endereço
 
             builder.HasOne(p => p.Endereco)
                 .WithOne(p => p.Apartamento)
